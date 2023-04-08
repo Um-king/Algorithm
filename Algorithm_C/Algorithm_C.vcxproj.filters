@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithm_Sort_1.c">
+    <ClCompile Include="Algorithm_SelectionSort.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Algorithm_BubbleSort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm_InsertionSort.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
