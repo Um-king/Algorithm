@@ -18,5 +18,8 @@
     <ClCompile Include="Algorithm_Sort_1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithm_BubbleSort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
