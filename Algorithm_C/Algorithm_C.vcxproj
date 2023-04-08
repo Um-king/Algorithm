@@ -130,7 +130,10 @@
     <ClCompile Include="Algorithm_BubbleSort.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Algorithm_InsertionSort.c" />
+    <ClCompile Include="Algorithm_InsertionSort.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Algorithm_QuickSort.c" />
     <ClCompile Include="Algorithm_SelectionSort.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
