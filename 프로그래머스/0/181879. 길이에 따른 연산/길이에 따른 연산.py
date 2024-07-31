@@ -1,7 +1,7 @@
-from functools import reduce
+# from functools import reduce
 
-def solution(num_list):
-    return sum(num_list) if len(num_list) >= 11 else reduce(lambda x, y : x * y, num_list)
+# def solution(num_list):
+#     return sum(num_list) if len(num_list) >= 11 else reduce(lambda x, y : x * y, num_list)
 
 
 # reduce 함수는 시퀀스(리스트 등)의 요소들을 누적하여 단일 결과를 만드는 함수입니다. 
@@ -10,3 +10,11 @@ def solution(num_list):
 # 1. 시퀀스의 첫 두 요소를 가져와서 주어진 함수를 적용합니다.
 # 2. 그 결과와 다음 요소를 가져와서 주어진 함수를 다시 적용합니다.
 # 3. 시퀀스의 모든 요소에 대해 이 과정을 반복하여 최종 결과를 얻습니다.
+
+
+from math import prod
+
+def solution(num_list):
+    return sum(num_list) if len(num_list) >= 11 else prod(num_list)
+
+# prod 함수는 Python 3.8에서 도입된 함수로, 주어진 iterable의 모든 요소를 곱한 결과를 반환
