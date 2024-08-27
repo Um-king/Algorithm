@@ -1,2 +1,2 @@
 def solution(strArr):
-    return [i for i in strArr if "ad" not in i]
+    return [word for word in strArr if "ad" not in word]
