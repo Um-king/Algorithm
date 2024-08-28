@@ -1,2 +1,6 @@
 def solution(myString, pat):
-     return [myString[i:i+len(pat)] for i in range(len(myString) - len(pat) + 1)].count(pat)
+    cnt = 0
+    for i in range(len(myString) - len(pat) + 1):
+        if myString[i:i+len(pat)] == pat:
+            cnt += 1
+    return cnt
