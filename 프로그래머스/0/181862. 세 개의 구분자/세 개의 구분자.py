@@ -1,2 +1,3 @@
 def solution(myStr):
-    return myStr.replace('a', ' ').replace('b', ' ').replace('c', ' ').split()
+    answer = myStr.replace('a', ' ').replace('b', ' ').replace('c', ' ').split()
+    return answer if answer else ['EMPTY']
