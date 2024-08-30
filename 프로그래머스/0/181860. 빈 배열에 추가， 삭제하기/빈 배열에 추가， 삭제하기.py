@@ -2,9 +2,7 @@ def solution(arr, flag):
     answer = []
     for i, j in enumerate(flag):
         if j:
-            for k in range(arr[i] * 2):
-                answer.append(arr[i])
+            answer.extend([arr[i]] * arr[i] * 2) 
         else:
-            for q in range(arr[i]):
-                answer.pop()
-    return answer    
+            answer = answer[:-arr[i]]
+    return answer
