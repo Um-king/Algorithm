@@ -1,3 +1,6 @@
-from datetime import date
+import datetime
+
 def solution(a, b):
-    return date(2016,a,b).strftime('%a').upper()
+    date = datetime.datetime(2016, a, b)
+    week = date.strftime('%a')
+    return week.upper()
