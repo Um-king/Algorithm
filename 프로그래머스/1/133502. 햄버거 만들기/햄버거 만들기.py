@@ -5,5 +5,8 @@ def solution(ingredient):
         stack.append(i)
         if stack[-4:] == [1,2,3,1]:
             answer += 1
-            del stack[-4:] # 스택의 내용을 지우면 된다. -> 그럼 원 리스트를 건들 필요 없음..!
+            # del stack[-4:] # 스택의 내용을 지우면 된다. -> 그럼 원 리스트를 건들 필요 없음..!
+            # 혹은
+            for i in range(4):
+                stack.pop()
     return answer
