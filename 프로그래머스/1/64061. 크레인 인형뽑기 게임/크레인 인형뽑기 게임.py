@@ -1,21 +1,37 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
 def solution(board, moves):
+    stacklist = []
     answer = 0
-    box = []
-    stack = []
-    for i in range(len(board)):
-        b = []
-        for j in range(len(board)):
-            if board[j][i] != 0:
-                b.append(board[j][i])
-        box.append(b)
-   
+
     for i in moves:
-        if not box[i-1]:
-            continue
-        if not stack or stack[-1] != box[i-1][0]:
-            stack.append(box[i-1][0])
-        else:
-            stack.pop()
-            answer += 1
-        box[i-1].pop(0)        
-    return answer * 2
+        for j in range(len(board)):
+            if board[j][i-1] != 0:
+                stacklist.append(board[j][i-1])
+                board[j][i-1] = 0
+
+                if len(stacklist) > 1:
+                    if stacklist[-1] == stacklist[-2]:
+                        stacklist.pop(-1)
+                        stacklist.pop(-1)
+                        answer += 2     
+                break
+
+    return answer
