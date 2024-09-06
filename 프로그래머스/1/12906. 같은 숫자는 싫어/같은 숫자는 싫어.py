@@ -1,6 +1,6 @@
 def solution(arr):
-    answer = [arr[0]]
+    stack = []
     for i in arr:
-        if answer[-1] != i:
-            answer.append(i)
-    return answer
+        if not stack or stack[-1] != i:
+            stack.append(i)
+    return stack
