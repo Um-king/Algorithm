@@ -1,18 +1,8 @@
-# def solution(cards1, cards2, goal):
-#     for i in goal:
-#         if cards1 and i == cards1[0]:
-#             del cards1[0]
-#         elif cards2 and i == cards2[0]:
-#             del cards2[0]
-#         else:
-#             return "No"
-#     return "Yes"
-
 def solution(cards1, cards2, goal):
     for i in goal:
-        if cards1 and i == cards1[0]:
-            cards1.pop(0) # 무조건 첫 번째여야 하니깐
-        elif cards2 and i == cards2[0]:
+        if i in cards1 and i == cards1[0]:
+            cards1.pop(0)
+        elif i in cards2 and i == cards2[0]:
             cards2.pop(0)
         else:
             return "No"
