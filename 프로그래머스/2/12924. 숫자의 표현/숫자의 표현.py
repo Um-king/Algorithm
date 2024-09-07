@@ -11,5 +11,4 @@ def solution(n):
                 answer += 1
                 break
             i += 1
-
     return answer
