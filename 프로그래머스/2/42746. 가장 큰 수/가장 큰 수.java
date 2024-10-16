@@ -25,7 +25,7 @@ class Solution {
         
         // 정렬된 문자열 연결
         for (int i = 0; i < strNumbers.length; i++) {
-            answer = answer + strNumbers[i];
+            answer += strNumbers[i];
         }
         
         return answer;
