@@ -1,16 +1,15 @@
 class Solution {
     boolean solution(String s) {
-        int pCnt = 0;
-        int yCnt = 0;
+        int cnt = 0;
         String str = s.toLowerCase();
             
         for(char c : str.toCharArray()) {
             if(c == 'p')
-                pCnt++;
+                cnt++;
             else if (c == 'y')
-                yCnt++;
+                cnt--;
         }
 
-        return pCnt == yCnt;
+        return cnt == 0;
     }
 }
