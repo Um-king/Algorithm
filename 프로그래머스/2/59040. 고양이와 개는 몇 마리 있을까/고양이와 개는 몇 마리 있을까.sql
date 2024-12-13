@@ -1,5 +1,4 @@
--- 코드를 입력하세요
 SELECT ANIMAL_TYPE,	COUNT(ANIMAL_TYPE) count
 FROM ANIMAL_INS 
-Group By ANIMAL_TYPE
-Order By ANIMAL_TYPE
+Group By 1
+Order By 1
