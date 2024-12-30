@@ -1,5 +1,3 @@
--- 코드를 입력하세요
-
 SELECT 
     C.USER_ID, 
     C.NICKNAME, CONCAT(CITY, ' ', STREET_ADDRESS1, ' ', STREET_ADDRESS2) 전체주소,
